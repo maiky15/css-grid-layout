@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  font: 80% 'Baloo Thambi', cursive;
+  grid-template: auto 300px / 1fr 1fr 1fr 1fr;
+  grid-template-areas: "head  head head head"
+                       "side1 main main side2";
+  grid-gap: 1rem;
+}
+
+.grid div:nth-child(1) {
+  background-color: rgb(156, 117, 43);
+  grid-area: head;
+}
+
+.grid div:nth-child(2) {
+  background-color: rgb(43, 156, 95);
+  grid-area: side1;
+}
+
+.grid div:nth-child(3) {
+  background-color: rgb(43, 112, 156);
+  grid-area: main;
+}
+
+.grid div:nth-child(4) {
+  background-color: rgb(156, 43, 80);
+  grid-area: side2;
+}
